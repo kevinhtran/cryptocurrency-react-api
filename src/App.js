@@ -46,12 +46,12 @@ function App() {
           <Coin
             key={coin.id}
             name={coin.name}
-            image={coin.image}
-            symbol={coin.symbol}
-            marketcap={coin.market_cap}
             price={coin.current_price}
+            symbol={coin.symbol}
+            marketCap={coin.total_volume}
+            volume={coin.market_cap}
+            image={coin.image}
             priceChange={coin.price_change_percentage_24h}
-            volume={coin.total_volume}
           />
         );
       })}

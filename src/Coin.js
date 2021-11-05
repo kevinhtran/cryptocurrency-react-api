@@ -8,7 +8,7 @@ const Coin = ({
   price,
   volume,
   priceChange,
-  marketcap,
+  marketCap,
 }) => {
   return (
     <div className='coin-container'>
@@ -26,8 +26,8 @@ const Coin = ({
           ) : (
             <p className='coin-percent green'>{priceChange.toFixed(2)}%</p>
           )}
-          <p className='coin-marketcap'>
-            Mkt Cap: ${marketcap.toLocaleString()}
+          <p className='coin-marketCap'>
+            Mkt Cap: ${marketCap.toLocaleString()}
           </p>
         </div>
       </div>
